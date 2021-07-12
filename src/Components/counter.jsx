@@ -8,7 +8,7 @@ class Counter extends Component {
         // Look bootstrap documentation for className
         return (
             // Rendering of Lists: to convert strings into java script objects
-            <div>
+        <div>
             <span  className = {this.getBadgeClasses()}>{this.formatCount()}</span>
             <button onClick = {() => this.props.onIncrement(this.props.counter)} className = "btm btn-secondary btn-sm">Increment</button>
             <button  onClick = {() => this.props.onDelete(this.props.counter.id)} className = "btm btn-danger btn-sm  m-2">Delete</button>
